@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coladera de Eratóstenes</title>
+</head>
+<body>
+    <h1>Coladera de Eratóstenes</h1>
+    <h2>Francisco Samuel Becerra Salgado 3°I</h2>
+    <p>Pulsa F12 ;)</p>
+
+    <script>
+        let array = new Array();
+        for(let i=0; i<1000; i++){
+            array.push(1);
+        }
+
+        for(let i=2; i<1000; i++){
+            if(array[i] == 1){
+                for(let exp=i*2; exp<1000; exp+= i){
+                    array[exp] = 0;
+                }
+            }
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
